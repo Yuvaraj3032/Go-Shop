@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #f4f4f4;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .social-icons a:hover {
+      background-color: #007bff;
+      color: #fff;
+      transform: scale(1.1);
+    }
+    .info-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    
+
+   
+}
+
+.info-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    color:blue;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.info-link i {
+    font-size: 20px;
+}
+
+.info-link:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+  </style>
+
+
+
+  <title>Ecommerce Website</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="info-links">
+          <a href="tel: +91 6383600352" class="info-link phone">
+            <i class="fas fa-phone icon"></i> +91 6383600352
+          </a>
+          <a href="mailto:yuvarajj3031@gmail.com" class="info-link email">
+            <i class="fas fa-envelope icon"></i>yuvarajj3031@gmail.com
+          </a>
+        </div>
+
+
+        <p class="header__alert-news">
+          Super Values Deals - Save more coupons
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img class="nav__logo-img" src="assets/img/Logo.png" alt="website logo" />
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__menu-top">
+          <a href="index.html" class="nav__menu-logo">
+            <img src="./assets/img/Logo.png" alt="">
+          </a>
+          <div class="nav__close" id="nav-close">
+            <i class="fi fi-rs-cross-small"></i>
+          </div>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link active-link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="shop.html" class="nav__link">Shop</a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">About Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">Contact Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="faq.html" class="nav__link">FAQ</a>
+          </li>
+
+
+        </ul>
+        <div class="header__search">
+          <input type="text" placeholder="Search For Items..." class="form__input" />
+          <button class="search__btn">
+            <img src="assets/img/search.png" alt="search icon" />
+          </button>
+        </div>
+      </div>
+      <div class="header__user-actions">
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/icon-heart.svg" alt="" />
+    
+        </a>
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/icon-cart.svg" alt="" />
+          
+        </a>
+        <div class="header__action-btn nav__toggle" id="nav-toggle">
+          <img src="./assets//img/menu-burger.svg" alt="">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <section class="cart section--lg container">
+      <h2>Shopping Cart</h2>
+      <div class="table__container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="cart-table-body">
+            <!-- Cart items will be dynamically inserted here -->
+            <tr>
+              <td colspan='6'>Your cart is empty</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="cart__actions">
+        <a href="#" class="btn flex btn__md">
+          <i class="fi-rs-shuffle"></i> Update Cart
+        </a>
+        <a href="#" class="btn flex btn__md">
+          <i class="fi-rs-shopping-bag"></i> Continue Shopping
+        </a>
+      </div>
+
+      <div class="divider">
+        <i class="fi fi-rs-fingerprint"></i>
+      </div>
+
+      <div class="cart__group grid">
+        <div>
+          <div class="cart__shippinp">
+            <h3 class="section__title">Calculate Shipping</h3>
+            <form action="" class="form grid">
+
+              <select id="state-select" class="form__input">
+                <option value="" selected disabled>Select State</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Delhi">Delhi</option>
+              </select>
+
+
+              <div class="form__group grid">
+                <input type="text" class="form__input" placeholder="City" />
+                <input type="text" class="form__input" placeholder="PostCode" />
+              </div>
+              <div class="form__btn">
+                <button class="btn flex btn--sm">
+                  <i class="fi-rs-shuffle"></i> Update
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="cart__coupon">
+            <h3 class="section__title">Apply Coupon</h3>
+            <form action="" class="coupon__form form grid">
+              <div class="form__group grid">
+                <input type="text" class="form__input" placeholder="Enter Your Coupon" />
+                <div class="form__btn">
+                  <button class="btn flex btn--sm">
+                    <i class="fi-rs-label"></i> Aplly
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+        <div class="cart__total">
+          <h3 class="section__title">Cart Totals</h3>
+          <table class="cart__total-table">
+            <tr>
+              <td><span class="cart__total-title">Cart Subtotal</span></td>
+              <td><span id="cart-subtotal" class="cart__total-price">$0.00</span></td>
+            </tr>
+            <tr>
+              <td><span class="cart__total-title">Shipping</span></td>
+              <td><span id="cart-shipping" class="cart__total-price">$10.00</span></td>
+            </tr>
+            <tr>
+              <td><span class="cart__total-title">Total</span></td>
+              <td><span id="cart-total" class="cart__total-price">$0.00</span></td>
+            </tr>
+
+          </table>
+          <a href="checkout.html" class="btn flex btn--md" onclick="saveCartToLocalStorage()">
+            <i class="fi fi-rs-box-alt"></i> Proceed To Checkout
+          </a>
+        
+          <script>
+            document.getElementById("checkout-btn").addEventListener("click", () => {
+              const cartItems = []; // Array to store cart products
+
+              document.querySelectorAll("table tbody tr").forEach(row => {
+                const item = {
+                  image: row.querySelector("td img")?.src || "",
+                  title: row.querySelector("td:nth-child(2)").innerText.trim(),
+                  price: row.querySelector("td:nth-child(3)").innerText.trim(),
+                  quantity: row.querySelector("td:nth-child(4) input").value.trim(),
+                  subtotal: row.querySelector("td:nth-child(5)").innerText.trim()
+                };
+                cartItems.push(item);
+              });
+
+              const cartTotals = {
+                subtotal: document.querySelector(".cart-subtotal").innerText.trim(),
+                shipping: document.querySelector(".cart-shipping").innerText.trim(),
+                total: document.querySelector(".cart-total").innerText.trim()
+              };
+
+              // Store in localStorage
+              localStorage.setItem("checkoutCart", JSON.stringify(cartItems));
+              localStorage.setItem("cartTotals", JSON.stringify(cartTotals));
+            });
+
+          </script>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer container">
+    <div class="footer__container grid">
+      <div class="footer__content">
+        <a href="index.html" class="footer__logo">
+          <img src="./assets/img/Logo.png" alt="" class="footer__logo-img" />
+        </a>
+        <h4 class="footer__subtitle">Contact</h4>
+        <p class="footer__description">
+          <span>Address:</span> 6/32, 12 th street,Padi
+        </p>
+        <p class="footer__description">
+          <span>Phone:</span>+91 6383600352
+        </p>
+        <p class="footer__description">
+          <span>Hours:</span> 10:00 - 18:00, Mon - Sat
+        </p>
+        <div class="footer__social">
+          <h4 class="footer__subtitle">Follow Me</h4>
+          <div class="footer__links flex">
+            <a href="#">
+              <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-twitter.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-pinterest.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Address</h3>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">About Us</a></li>
+          <li><a href="#" class="footer__link">Delivery Information</a></li>
+          <li><a href="#" class="footer__link">Privacy Policy</a></li>
+          <li><a href="#" class="footer__link">Terms & Conditions</a></li>
+          <li><a href="#" class="footer__link">Contact Us</a></li>
+          <li><a href="#" class="footer__link">Support Center</a></li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">My Account</h3>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">Sign In</a></li>
+          <li><a href="#" class="footer__link">View Cart</a></li>
+          <li><a href="#" class="footer__link">My Wishlist</a></li>
+          <li><a href="#" class="footer__link">Track My Order</a></li>
+          <li><a href="#" class="footer__link">Help</a></li>
+          <li><a href="#" class="footer__link">Order</a></li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Secured Payed Gateways</h3>
+        <img src="./assets/img/payment-method.png" alt="" class="payment__img" />
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="copyright">&copy; 2024 GoShop. All right reserved</p>
+      <span class="designer">Designer by YUVA</span>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const cartTableBody = document.getElementById("cart-table-body");
+  const stateSelect = document.getElementById("state-select");
+  const cartSubtotalElement = document.getElementById("cart-subtotal");
+  const cartShippingElement = document.getElementById("cart-shipping");
+  const cartTotalElement = document.getElementById("cart-total");
+  const updateShippingBtn = document.querySelector(".form__btn button");
+  const couponInput = document.querySelector(".coupon__form input");
+  const applyCouponBtn = document.querySelector(".coupon__form button");
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let appliedDiscount = 0; // Store applied coupon discount
+  let selectedShipping = 0; // Store selected shipping price
+
+  // Define shipping rates for states
+  const shippingRates = {
+    "Tamil Nadu": 20.00,
+    "Karnataka": 30.00,
+    "Kerala": 25.00,
+    "Maharashtra": 35.00,
+    "Delhi": 40.00,
+  };
+
+  // Define available coupons
+  const coupons = {
+    "SAVE10": 10,   // $10 discount
+    "OFF20": 20,    // $20 discount
+    "DISCOUNT5": 5  // $5 discount
+  };
+
+  function updateCartDisplay() {
+    cartTableBody.innerHTML = cart.length > 0 ? "" : "<tr><td colspan='6'>Your cart is empty</td></tr>";
+
+    let subtotal = 0;
+
+    cart.forEach((item, index) => {
+      let price = parseFloat(item.price.replace(/[^0-9.-]+/g, "")); // Extract numeric value from price string
+      let quantity = item.quantity || 1;
+      let total = price * quantity;
+      subtotal += total;
+
+      const row = `
+        <tr>
+          <td><img src="${item.image}" class="table__img" width="50"></td>
+          <td>${item.title}</td>
+          <td>₹${price.toFixed(2)}</td>
+          <td><input type="number" class="quantity" data-index="${index}" value="${quantity}" min="1"></td>
+          <td class="subtotal">₹${total.toFixed(2)}</td>
+          <td><button class="remove-cart-item" data-index="${index}">Remove</button></td>
+        </tr>
+      `;
+      cartTableBody.insertAdjacentHTML("beforeend", row);
+    });
+
+    cartSubtotalElement.innerText = `₹${subtotal.toFixed(2)}`;
+
+    let total = subtotal + selectedShipping - appliedDiscount;
+    if (total < 0) total = 0; // Prevent negative total
+
+    cartTotalElement.innerText = `₹${total.toFixed(2)}`;
+
+    document.querySelectorAll(".quantity").forEach(input => {
+      input.addEventListener("change", (event) => {
+        let index = event.target.dataset.index;
+        cart[index].quantity = parseInt(event.target.value);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartDisplay();
+      });
+    });
+
+    document.querySelectorAll(".remove-cart-item").forEach(button => {
+      button.addEventListener("click", (event) => {
+        let index = event.target.dataset.index;
+        cart.splice(index, 1);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartDisplay();
+      });
+    });
+  }
+
+  // Update shipping only when "Update" button is clicked
+  updateShippingBtn.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent form submission
+
+    let selectedState = stateSelect.value;
+    if (shippingRates[selectedState]) {
+      selectedShipping = shippingRates[selectedState];
+    } else {
+      selectedShipping = 0;
+    }
+
+    cartShippingElement.innerText = `₹${selectedShipping.toFixed(2)}`;
+    updateCartDisplay();
+  });
+
+  // Apply Coupon
+  applyCouponBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    let couponCode = couponInput.value.trim().toUpperCase();
+    if (coupons[couponCode]) {
+      appliedDiscount = coupons[couponCode];
+      alert(`Coupon applied! You got a ₹${appliedDiscount} discount.`);
+    } else {
+      appliedDiscount = 0;
+      alert("Invalid coupon code!");
+    }
+
+    updateCartDisplay();
+  });
+
+  updateCartDisplay();
+});
+  </script>
+
+
+</body>
+
+</html>

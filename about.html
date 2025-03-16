@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Ecommerce Website</title>
+    <!--=============== FLATICON ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+      /* Additional styles for a more stylish About Us page */
+      .about-hero {
+        background: url('assets/img/about-hero.jpg') center/cover no-repeat;
+        color: #fff;
+        text-align: center;
+        padding: 120px 0;
+        position: relative;
+      }
+      .about-hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      .about-hero .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+      .hero-content h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+      }
+      .hero-content p {
+        font-size: 1.2em;
+      }
+      .about-section {
+        padding: 80px 0;
+      }
+      .about-section h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2.5em;
+        color: #333;
+      }
+      .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .about-content .about-image {
+        flex: 1 1 45%;
+        padding: 20px;
+      }
+      .about-content .about-text {
+        flex: 1 1 55%;
+        padding: 20px;
+      }
+      .about-text p {
+        margin-bottom: 20px;
+        line-height: 1.6;
+        color: #555;
+      }
+      .mission-vision {
+        background: #f9f9f9;
+        padding: 60px 0;
+      }
+      .mission-vision h3 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2em;
+        color: #333;
+      }
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 10px;
+        flex: 1 1 250px;
+        text-align: center;
+      }
+      .card i {
+        font-size: 2em;
+        color: #ff6f61;
+        margin-bottom: 10px;
+      }
+      .card h4 {
+        margin-bottom: 10px;
+        color: #333;
+      }
+      .card p {
+        color: #666;
+        font-size: 0.95em;
+      }
+      .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #f4f4f4;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .social-icons a:hover {
+      background-color: #007bff;
+      color: #fff;
+      transform: scale(1.1);
+    }
+    .info-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    
+
+   
+}
+
+.info-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    color:blue;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.info-link i {
+    font-size: 20px;
+}
+
+.info-link:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+    </style>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <div class="header__top">
+        <div class="header__container container">
+          <div class="info-links">
+            <a href="tel: +91 6383600352" class="info-link phone">
+              <i class="fas fa-phone icon"></i> +91 6383600352
+            </a>
+            <a href="mailto:yuvarajj3031@gmail.com" class="info-link email">
+              <i class="fas fa-envelope icon"></i>yuvarajj3031@gmail.com
+            </a>
+          </div>
+  
+  
+          <p class="header__alert-news">
+            Super Values Deals - Save more coupons
+          </p>
+  
+          <!-- Social Media Icons -->
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+  
+        </div>
+      </div>
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img
+            class="nav__logo-img"
+            src="assets/img/Logo.png"
+            alt="website logo"
+          />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link">Shop</a>
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Contact Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="faq.html" class="nav__link">FAQ</a>
+            </li>
+  
+  
+          </ul>
+          <div class="header__search">
+            <input
+              type="text"
+              placeholder="Search For Items..."
+              class="form__input"
+            />
+            <button class="search__btn">
+              <img src="assets/img/search.png" alt="search icon" />
+            </button>
+          </div>
+        </div>
+        <div class="header__user-actions">
+          <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+            <img src="assets/img/icon-heart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+          <a href="cart.html" class="header__action-btn" title="Cart">
+            <img src="assets/img/icon-cart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== ABOUT HERO SECTION ===============-->
+    <section class="about-hero">
+      <div class="hero-content container">
+        <h1>About Us</h1>
+        <p>Your Trusted Partner in Online Shopping</p>
+      </div>
+    </section>
+
+<!--=============== OUR STORY SECTION ===============-->
+<section class="about-section container">
+  <h2>About Us</h2>
+  <div class="about-content">
+    <div class="about-image">
+      <img
+        src="./assets/img/Logo.png"
+        alt="About Us"
+        style="width: 100%; border-radius: 8px;"
+      />
+    </div>
+    <div class="about-text">
+      <p>
+        Established in 2024, our ecommerce platform is designed to make shopping easy and
+        hassle-free for everyone. No need to create an account — just browse, add to cart, 
+        and checkout as a guest!
+      </p>
+      <p>
+        We aim to simplify your online shopping experience by offering a wide range of 
+        high-quality products at competitive prices. Our platform is built with speed, 
+        convenience, and security in mind.
+      </p>
+      <p>
+        Your satisfaction is our priority. We are committed to providing a smooth and 
+        secure checkout process, quick delivery, and excellent customer support.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--=============== MISSION & VISION SECTION ===============-->
+<section class="mission-vision">
+  <div class="container">
+    <h3>Our Mission & Vision</h3>
+    <div class="cards">
+      <div class="card">
+        <i class="fi fi-rs-cart-check"></i>
+        <h4>Seamless Checkout</h4>
+        <p>
+          No account required — just add to cart and checkout instantly.
+        </p>
+      </div>
+      <div class="card">
+        <i class="fi fi-rs-box"></i>
+        <h4>Wide Product Range</h4>
+        <p>
+          From everyday essentials to trending items, find it all in one place.
+        </p>
+      </div>
+      <div class="card">
+        <i class="fi fi-rs-lock"></i>
+        <h4>Secure Payments</h4>
+        <p>
+          Your data is safe with us. We ensure secure transactions every time.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer__container grid">
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img src="assets/img/Logo.png" alt="" class="footer__logo-img" />
+          </a>
+          <h4 class="footer__subtitle">Contact</h4>
+          <p class="footer__description">
+            <span>Address:</span> 6/32, 12 th street,Padi
+          </p>
+          <p class="footer__description">
+            <span>Phone:</span> +91 6383600352
+          </p>
+          <p class="footer__description">
+            <span>Hours:</span> 10:00 - 18:00, Mon - Sat
+          </p>
+          <div class="footer__social">
+            <h4 class="footer__subtitle">Follow Us</h4>
+            <div class="footer__links flex">
+              <a href="#">
+                <img
+                  src="assets/img/icon-facebook.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="assets/img/icon-twitter.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="assets/img/icon-instagram.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="assets/img/icon-pinterest.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="assets/img/icon-youtube.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Address</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="about.html" class="footer__link">About Us</a>
+            </li>
+            <li>
+              <a href="shop.html" class="footer__link">Shop</a>
+            </li>
+            <li>
+              <a href="contact.html" class="footer__link">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Delivery Information</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Terms & Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">My Account</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Sign In</a></li>
+            <li><a href="#" class="footer__link">View Cart</a></li>
+            <li><a href="#" class="footer__link">My Wishlist</a></li>
+            <li>
+              <a href="#" class="footer__link">Track My Order</a>
+            </li>
+            <li><a href="#" class="footer__link">Help</a></li>
+            <li><a href="#" class="footer__link">Order</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Secured Payment Gateways</h3>
+          <img src="assets/img/payment-method.png" alt="" class="payment__img" />
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="copyright">
+          &copy; 2024 GoShop. All rights reserved
+        </p>
+        <span class="designer">Designer by YUVA</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

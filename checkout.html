@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <title>Ecommerce Website</title>
+  <style>
+     .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #f4f4f4;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .social-icons a:hover {
+      background-color: #007bff;
+      color: #fff;
+      transform: scale(1.1);
+    }
+    .info-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    
+
+   
+}
+
+.info-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    color:blue;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.info-link i {
+    font-size: 20px;
+}
+
+.info-link:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+  </style>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="info-links">
+          <a href="tel: +91 6383600352" class="info-link phone">
+            <i class="fas fa-phone icon"></i> +91 6383600352
+          </a>
+          <a href="mailto:yuvarajj3031@gmail.com" class="info-link email">
+            <i class="fas fa-envelope icon"></i>yuvarajj3031@gmail.com
+          </a>
+        </div>
+
+
+        <p class="header__alert-news">
+          Super Values Deals - Save more coupons
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img class="nav__logo-img" src="assets/img/Untitled_design-removebg-preview.png" alt="website logo" />
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="shop.html" class="nav__link">Shop</a>
+          </li>
+          <li class="nav__item">
+            <a href="accounts.html" class="nav__link">My Account</a>
+          </li>
+          <li class="nav__item">
+            <a href="compare.html" class="nav__link">Compare</a>
+          </li>
+         
+        </ul>
+        <div class="header__search">
+          <input type="text" placeholder="Search For Items..." class="form__input" />
+          <button class="search__btn">
+            <img src="assets/img/search.png" alt="search icon" />
+          </button>
+        </div>
+      </div>
+      <div class="header__user-actions">
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/icon-heart.svg" alt="" />
+          <span class="count">3</span>
+        </a>
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/icon-cart.svg" alt="" />
+          <span class="count">3</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <!--=============== BREADCRUMB ===============-->
+    <section class="breadcrumb">
+      <ul class="breadcrumb__list flex container">
+        <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+        <li><span class="breadcrumb__link">></span></li>
+        <li><span class="breadcrumb__link">Shop</span></li>
+        <li><span class="breadcrumb__link">></span></li>
+        <li><span class="breadcrumb__link">Checkout</span></li>
+      </ul>
+    </section>
+
+    <!--=============== CHECKOUT ===============-->
+    <section class="checkout section--lg">
+      <div class="checkout__container container grid">
+        <div class="checkout__group">
+          <h3 class="section__title">Billing Details</h3>
+          <form class="form grid">
+            <input type="text" placeholder="Name" class="form__input" />
+            <input type="text" placeholder="Address" class="form__input" />
+            <input type="text" placeholder="City" class="form__input" />
+            <input type="text" placeholder="Country" class="form__input" />
+            <input type="text" placeholder="Postcode" class="form__input" />
+            <input type="text" placeholder="Phone" class="form__input" />
+            <input type="email" placeholder="Email" class="form__input" />
+            <h3 class="checkout__title">Additional Information</h3>
+            <textarea name="" placeholder="order note" class="form__input textarea"></textarea>
+          </form>
+        </div>
+        <div class="checkout__group">
+          <h3 class="section__title">Cart Totals</h3>
+          <table class="order__table">
+            <thead>
+              <tr>
+                <th colspan="2">Products</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody id="checkout-table-body">
+              <!-- Cart items will be dynamically inserted here -->
+            </tbody>
+          </table>
+          <div class="payment__methods">
+            <h3 class="checkout__title payment__title">Payment</h3>
+            <div class="payment__option flex">
+              <input type="radio" name="radio" id="l1" checked class="payment__input" disabled />
+              <label for="l1" class="payment__label">Direct Bank Transfer</label>
+            </div>
+            <div class="payment__option flex">
+              <input type="radio" name="radio" id="l2" class="payment__input" disabled />
+              <label for="l2" class="payment__label">UPI</label>
+            </div>
+            <div class="payment__option flex">
+              <input type="radio" name="radio" id="l3" class="payment__input" disabled />
+              <label for="l3" class="payment__label">Paypal</label>
+            </div>
+            <div class="payment__option flex">
+              <input type="radio" name="radio" id="l4" class="payment__input" />
+              <label for="l4" class="payment__label">Cash on Delivery</label>
+            </div>
+            <p class="payment__note" style="color: red;">
+              As per RBI guidelines, UPI payments will not be accepted until 2026. To compensate, we are offering free
+              shipping and select products for just $1. We apologize for any inconvenience caused.
+            </p>
+          </div>
+
+          <button class="btn btn--md">Place Order</button>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== NEWSLETTER ===============-->
+    <section class="newsletter section">
+      <div class="newsletter__container container grid">
+        <h3 class="newsletter__title flex">
+          <img src="./assets/img/icon-email.svg" alt="" class="newsletter__icon" />
+          Sign in to Newsletter
+        </h3>
+        <p class="newsletter__description">
+          ...and receive $25 coupon for first shopping.
+        </p>
+        <form action="" class="newsletter__form">
+          <input type="text" placeholder="Enter Your Email" class="newsletter__input" />
+          <button type="submit" class="newsletter__btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <div class="footer__container grid">
+      <div class="footer__content">
+        <a href="index.html" class="footer__logo">
+          <img src="./assets/img/Logo.png" alt="" class="footer__logo-img" />
+        </a>
+        <h4 class="footer__subtitle">Contact</h4>
+        <p class="footer__description">
+          <span>Address:</span> 6/32, 12 th street,Padi
+        </p>
+        <p class="footer__description">
+          <span>Phone:</span> +91 6383600352
+        </p>
+        <p class="footer__description">
+          <span>Hours:</span> 10:00 - 18:00, Mon - Sat
+        </p>
+        <div class="footer__social">
+          <h4 class="footer__subtitle">Follow Me</h4>
+          <div class="footer__links flex">
+            <a href="#">
+              <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-twitter.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-pinterest.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Address</h3>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">About Us</a></li>
+          <li><a href="#" class="footer__link">Delivery Information</a></li>
+          <li><a href="#" class="footer__link">Privacy Policy</a></li>
+          <li><a href="#" class="footer__link">Terms & Conditions</a></li>
+          <li><a href="#" class="footer__link">Contact Us</a></li>
+          <li><a href="#" class="footer__link">Support Center</a></li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">My Account</h3>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">Sign In</a></li>
+          <li><a href="#" class="footer__link">View Cart</a></li>
+          <li><a href="#" class="footer__link">My Wishlist</a></li>
+          <li><a href="#" class="footer__link">Track My Order</a></li>
+          <li><a href="#" class="footer__link">Help</a></li>
+          <li><a href="#" class="footer__link">Order</a></li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Secured Payed Gateways</h3>
+        <img src="./assets/img/payment-method.png" alt="" class="payment__img" />
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="copyright">&copy; 2024 GoShop. All right reserved</p>
+      <span class="designer">Designer by Yuva</span>
+    </div>
+  </footer>
+  <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const checkoutTableBody = document.getElementById("checkout-table-body");
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      let subtotal = 0;
+
+      // Clear the table body and display a message if the cart is empty
+      checkoutTableBody.innerHTML = cart.length > 0 ? "" : "<tr><td colspan='3'>Your cart is empty</td></tr>";
+
+      // Loop through each item in the cart and render it in the table
+      cart.forEach((item) => {
+        // Extract the numeric value from the price string (e.g., "$20.00" -> 20.00)
+        let price = parseFloat(item.price.replace(/[^0-9.-]+/g, ""));
+        let quantity = item.quantity || 1; // Default to 1 if quantity is not set
+        let total = price * quantity; // Calculate the total for this item
+        subtotal += total; // Add to the subtotal
+
+        // Create a table row for the item
+        const row = `
+            <tr>
+                <td><img src="${item.image}" class="order__img" width="50"></td>
+                <td>
+                    <h3 class="table__title">${item.title}</h3>
+                    <p class="table__quantity">x ${quantity}</p>
+                </td>
+                <td><span class="table__price">₹${total.toFixed(2)}</span></td>
+            </tr>
+        `;
+        checkoutTableBody.insertAdjacentHTML("beforeend", row); // Insert the row into the table
+      });
+
+      // Add subtotal, shipping, and total rows to the table
+      const totalRow = `
+        <tr>
+            <td><span class="order__subtitle">Subtotal</span></td>
+            <td colspan="2"><span class="table__price">₹${subtotal.toFixed(2)}</span></td>
+        </tr>
+        <tr>
+            <td><span class="order__subtitle">Shipping</span></td>
+            <td colspan="2"><span class="table__price">Free Shipping</span></td>
+        </tr>
+        <tr>
+            <td><span class="order__subtitle">Total</span></td>
+            <td colspan="2"><span class="order__grand-total">₹${subtotal.toFixed(2)}</span></td>
+        </tr>
+    `;
+      checkoutTableBody.insertAdjacentHTML("beforeend", totalRow); // Insert the total row into the table
+    });
+
+    // Place Order Button Logic
+    document.addEventListener("DOMContentLoaded", function () {
+      const placeOrderBtn = document.querySelector(".btn.btn--md");
+
+      placeOrderBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        // Select all input fields in the checkout form
+        const checkoutForm = document.querySelector(".checkout__group .form");
+        const inputs = checkoutForm.querySelectorAll(".form__input");
+
+        let isValid = true;
+
+        // Validate each input field
+        inputs.forEach((input) => {
+          if (input.value.trim() === "") {
+            isValid = false;
+            input.style.border = "2px solid red"; // Highlight empty fields
+          } else {
+            input.style.border = ""; // Reset border if filled
+          }
+        });
+
+        // If any field is empty, show an alert and stop the process
+        if (!isValid) {
+          alert("Please fill in all the required fields.");
+          return;
+        }
+
+        // Create the "Order Placed" animation
+        const orderMessage = document.createElement("div");
+        orderMessage.innerHTML = `
+            <h2>🎉 Order Placed Successfully! 🎉</h2>
+            <p>Thank you for your purchase.</p>
+        `;
+        orderMessage.style.position = "fixed";
+        orderMessage.style.top = "50%";
+        orderMessage.style.left = "50%";
+        orderMessage.style.transform = "translate(-50%, -50%) scale(0.5)";
+        orderMessage.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)";
+        orderMessage.style.padding = "30px";
+        orderMessage.style.borderRadius = "10px";
+        orderMessage.style.textAlign = "center";
+        orderMessage.style.boxShadow = "0px 15px 25px rgba(0, 0, 0, 0.3)";
+        orderMessage.style.fontSize = "24px";
+        orderMessage.style.color = "#fff";
+        orderMessage.style.zIndex = "1000";
+        orderMessage.style.transition = "transform 0.5s ease-out";
+
+        document.body.appendChild(orderMessage);
+
+        // Animate the message to scale up smoothly
+        setTimeout(() => {
+          orderMessage.style.transform = "translate(-50%, -50%) scale(1)";
+        }, 100);
+
+        // Remove the message and redirect after 5 seconds
+        setTimeout(() => {
+          orderMessage.style.opacity = "0";
+          orderMessage.style.transform = "translate(-50%, -50%) scale(0.5)";
+          setTimeout(() => {
+            document.body.removeChild(orderMessage);
+            window.location.href = "index.html";
+          }, 500);
+        }, 5000);
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const placeOrderBtn = document.querySelector(".btn.btn--md");
+
+  placeOrderBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const checkoutForm = document.querySelector(".checkout__group .form");
+    const inputs = checkoutForm.querySelectorAll(".form__input");
+
+    let isValid = true;
+
+    inputs.forEach((input) => {
+      if (input.value.trim() === "") {
+        isValid = false;
+        input.style.border = "2px solid red";
+      } else {
+        input.style.border = "";
+      }
+    });
+
+    if (!isValid) {
+      alert("Please fill in all the required fields.");
+      return;
+    }
+
+    // Store order details in localStorage
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let orders = JSON.parse(localStorage.getItem("orders")) || [];
+    let date = new Date().toLocaleDateString();
+
+    cart.forEach(item => {
+      orders.push({
+        image: item.image,
+        title: item.title,
+        quantity: item.quantity || 1,
+        total: parseFloat(item.price.replace(/[^0-9.-]+/g, "")) * (item.quantity || 1),
+        date: date
+      });
+    });
+
+    localStorage.setItem("orders", JSON.stringify(orders));
+    localStorage.removeItem("cart"); // Clear cart after placing the order
+
+    alert("Order placed successfully!");
+    window.location.href = "orders.html";
+  });
+});
+  
+  </script>
+
+  <!-- Add this script to checkout.html -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const placeOrderBtn = document.querySelector(".btn.btn--md");
+
+  placeOrderBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    // Get user details from the checkout form
+    const userName = document.querySelector("input[placeholder='Name']").value;
+    const userEmail = document.querySelector("input[placeholder='Email']").value;
+    const userPhone = document.querySelector("input[placeholder='Phone']").value;
+    const userAddress = document.querySelector("input[placeholder='Address']").value;
+
+    if (!userName || !userEmail || !userPhone || !userAddress) {
+      alert("Please fill in all the required fields.");
+      return;
+    }
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let orders = JSON.parse(localStorage.getItem("orders")) || [];
+    let date = new Date().toLocaleDateString();
+
+    cart.forEach(item => {
+      orders.push({
+        image: item.image,
+        title: item.title,
+        quantity: item.quantity || 1,
+        total: parseFloat(item.price.replace(/[^0-9.-]+/g, "")) * (item.quantity || 1),
+        date: date,
+        userName: userName,  
+        userEmail: userEmail,  
+        userPhone: userPhone,  
+        userAddress: userAddress,  
+        status: "Pending"
+      });
+    });
+
+    localStorage.setItem("orders", JSON.stringify(orders));
+    localStorage.removeItem("cart");
+
+    alert("Order placed successfully!");
+    window.location.href = "orders.html";
+  });
+});
+
+  </script>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

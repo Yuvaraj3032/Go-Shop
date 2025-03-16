@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #f4f4f4;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .social-icons a:hover {
+      background-color: #007bff;
+      color: #fff;
+      transform: scale(1.1);
+    }
+
+    .info-links {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+
+
+
+    }
+
+    .info-link {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px 20px;
+      color: blue;
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    .info-link i {
+      font-size: 20px;
+    }
+
+    .info-link:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
+    }
+  </style>
+
+
+
+  <title>Ecommerce Website</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="info-links">
+          <a href="tel: +916383600352" class="info-link phone">
+            <i class="fas fa-phone icon"></i> +916383600352
+          </a>
+          <a href="mailto:yuvarajj3031@gmail.com" class="info-link email">
+            <i class="fas fa-envelope icon"></i>yuvarajj3031@gmail.com
+          </a>
+        </div>
+
+
+        <p class="header__alert-news">
+          Super Values Deals - Save more coupons
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img class="nav__logo-img" src="assets/img/Logo.png" alt="website logo" />
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__menu-top">
+          <a href="index.html" class="nav__menu-logo">
+            <img src="./assets/img/logo.png" alt="">
+          </a>
+          <div class="nav__close" id="nav-close">
+            <i class="fi fi-rs-cross-small"></i>
+          </div>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link active-link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="shop.html" class="nav__link">Shop</a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">About Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">Contact Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="faq.html" class="nav__link">FAQ</a>
+          </li>
+
+
+        </ul>
+        <div class="header__search">
+          <input type="text" placeholder="Search For Items..." class="form__input" />
+          <button class="search__btn">
+            <img src="assets/img/search.png" alt="search icon" />
+          </button>
+        </div>
+      </div>
+      <div class="header__user-actions">
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/icon-heart.svg" alt="" />
+
+        </a>
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/icon-cart.svg" alt="" />
+
+        </a>
+        
+        <a href="orders.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/shop-svgrepo-com.svg" alt="" />
+
+        </a>
+        <div class="header__action-btn nav__toggle" id="nav-toggle">
+          <img src="./assets//img/shop-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <!--=============== HOME ===============-->
+    <section class="home section--lg">
+      <div class="home__container container grid">
+        <div class="home__content">
+          <span class="home__subtitle">Hot Promotions</span>
+          <h1 class="home__title">
+            Fashion Trending <span>Great Collection</span>
+          </h1>
+          <p class="home__description">
+            Save more with coupons & up tp 20% off
+          </p>
+          <a href="shop.html" class="btn">Shop Now</a>
+        </div>
+        <img src="assets/img/home-img.png" class="home__img" alt="hats" />
+      </div>
+    </section>
+
+
+    <!--=============== PRODUCTS ===============-->
+    <section class="products container section">
+      <div class="tab__btns">
+        <span class="tab__btn active-tab" data-target="#featured">Featured</span>
+        <span class="tab__btn" data-target="#popular">Popular</span>
+        <span class="tab__btn" data-target="#new-added">New Added</span>
+      </div>
+
+      <div class="tab__items">
+        <div class="tab__item active-tab" content id="featured">
+          <div class="products__container grid">
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title=viscose rayon shirts&category=Clothing&price=258.85&oldPrice=275.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg&description=Sheetal Associates Polyester Solid Button Front Shirt Dress for Women || Roll Tab Sleeve & Collared Neck Flared Dress || Office || Summer Short Dresses for Women"
+                  class="product__images">
+                  <img src="assets/Products/product-1-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-1-2.jpg" alt="" class="product__img hover" />
+                </a>
+
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">Hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Clothing</span>
+                <a
+                  href="details.html?title= viscose rayon shirts&category=Clothing&price=258.85&oldPrice=275.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg">
+                  <h3 class="product__title">viscose rayon shirts</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹258.85</span>
+                  <span class="old__price">₹275.8</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title= Women Midi Dress&category=Clothing&price=437&oldPrice=1999&image1=assets/Products/product-2-1.jpg&image2=assets/Products/product-2-2.jpg&description=Leriya Fashion Women Midi Dress | One Piece Dress for Women | Dresses for Women | Trendi Dress for Women"
+                  class="product__images" class="product__images">
+                  <img src="assets/Products/product-2-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-2-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">Hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Clothing</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Clothing&price=238.85&oldPrice=245.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg">
+                  <h3 class="product__title">Women Midi Dress</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹437</span>
+                  <span class="old__price">₹1999</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title= Heel Sandals&category=Sandals&price=1,979&oldPrice=3300&image1=assets/Products/product-3-1.jpg&image2=assets/Products/product-3-2.jpg&description=Marc Loire Women Smart Casual Platform Heels Fashion Sandal"
+                  class="product__images" class="product__images">
+                  <img src="assets/Products/product-3-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-3-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">cool</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Sandals</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Clothing&price=238.85&oldPrice=245.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg">
+                  <h3 class="product__title">Heel Sandals</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹1,979</span>
+                  <span class="old__price">₹3300</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title= Heel Sandals&category=Sandals&price=1,079&oldPrice=2000&image1=assets/Products/product-4-1.jpg&image2=assets/Products/product-4-2.jpg&description=Lavie Women's Ushawu Small Satchel Bag | Ladies Purse Handbag"
+                  class="product__images" class="product__images">
+                  <img src="assets/Products/product-4-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-4-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">cool</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Bags</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Clothing&price=238.85&oldPrice=245.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg">
+                  <h3 class="product__title">Ushawu Small Satchel Bag</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹1,079</span>
+                  <span class="old__price">₹2000</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title= Rose gold Shell Necklace&category=Arunaments&price=229&oldPrice=2000&image1=assets/Products/product-5-1.jpg&image2=assets/Products/product-5-2.jpg&description=MEENAZ Pendant For Girls Women Ladies girlfriend Wife Moti Shell Pearl Necklace locket long chain Rose gold Shell Necklace diamond ad cz Pendants chains western Valentine gifts Birthday lovers"
+                  class="product__images" class="product__images">
+                  <img src="assets/Products/product-5-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-5-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Arnaments</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Clothing&price=238.85&oldPrice=245.8&image1=assets/Products/product-5-1.jpg&image2=assets/Products/product-5-2.jpg">
+                  <h3 class="product__title">Rose gold Shell Necklace</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹1,079</span>
+                  <span class="old__price">₹2000</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title= Ladies Purse Handbag&category=Arunaments&price=1,599&oldPrice=4,799&image1=assets/Products/product-6-1.jpg&image2=assets/Products/product-6-2.jpg&description=Lavie Women's Mono Ushawu Medium Satchel Bag | Ladies Purse Handbag"
+                  class="product__images">
+                  <img src="assets/Products/product-6-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-6-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Arnaments</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Clothing&price=238.85&oldPrice=245.8&image1=assets/Products/product-5-1.jpg&image2=assets/Products/product-5-2.jpg">
+                  <h3 class="product__title">Rose gold Shell Necklace</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹1,599</span>
+                  <span class="old__price">₹7,300</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title= Combo Waist Belts for Women and Girls &category=Arunaments&price=275&oldPrice=1,495&image1=assets/Products/product-7-1.jpg&image2=assets/Products/product-7-2.jpg&description=Shining Diva Fashion 2pcs Combo Waist Belts for Women and Girls | Stylish Belts for Dresses Jeans Saree | Celebrity Inspired Fashion Accessories"
+                  class="product__images">
+                  <img src="assets/Products/product-7-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-7-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Arnaments</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Clothing&price=275&oldPrice=1,495&image1=assets/Products/product-6-1.jpg&image2=assets/Products/product-6-2.jpg">
+                  <h3 class="product__title">Waist Belts for Women</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹275</span>
+                  <span class="old__price">₹1,495</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title=  Ethnicwear Dress&category=Arunaments&price=2,089&oldPrice=3,199&image1=assets/Products/product-8-1.jpg&image2=assets/Products/product-8-2.jpg&description=A.T.U.N. (ALL THINGS UBER NICE) Girls Long Ethnicwear Dress"
+                  class="product__images">
+                  <img src="assets/Products/product-8-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-8-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Dress</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Clothing&price=275&oldPrice=1,495&image1=assets/Products/product-6-1.jpg&image2=assets/Products/product-6-2.jpg">
+                  <h3 class="product__title">Ethnicwear Dress</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹2,089</span>
+                  <span class="old__price">₹3,199</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+          </div>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+        <div class="tab__item" content id="popular">
+          <div class="products__container grid">
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title= Hopscotch Girls Maxi Ankle Gown&category=Arunaments&price=1,544&oldPrice=3,199&image1=assets/Products/product-9-1.jpg&image2=assets/Products/product-9-2.jpg&description=Hopscotch Girls Maxi Ankle Gown"
+                  class="product__images">
+                  <img src="assets/Products/product-9-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-9-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Dress</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Clothing&price=275&oldPrice=2,999&image1=assets/Products/product-6-1.jpg&image2=assets/Products/product-6-2.jpg">
+                  <h3 class="product__title">Hopscotch Girls Maxi Ankle Gown</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹1,544</span>
+                  <span class="old__price">₹2,999</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title= Hopscotch Girls Maxi Ankle Gown&category=Clothing&price=1,820&oldPrice=2,919&image1=assets/Products/product-10-1.jpg&image2=assets/Products/product-10-2.jpg&description=Hopscotch Girl's Polyester And Viscose Sequin Embellished Maxi Gown In Blue Color"
+                  class="product__images">
+                  <img src="assets/Products/product-10-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-10-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Dress</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Clothing&price=275&oldPrice=2,999&image1=assets/Products/product-6-1.jpg&image2=assets/Products/product-6-2.jpg">
+                  <h3 class="product__title">Maxi Gown</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹1,820</span>
+                  <span class="old__price">₹2,919</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title= Solid Maxi Violet Gown &category=Clothing&price=1,785&oldPrice=3,249&image1=assets/Products/product-11-1.jpg&image2=assets/Products/product-11-2.jpg&description=Hopscotch Girls Polyester And Cotton Sleeveless Applique Solid Maxi Gown"
+                  class="product__images">
+                  <img src="assets/Products/product-11-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-11-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Dress</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Clothing&price=275&oldPrice=2,999&image1=assets/Products/product-6-1.jpg&image2=assets/Products/product-6-2.jpg">
+                  <h3 class="product__title">Solid Maxi Violet Gown</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹1,785</span>
+                  <span class="old__price">₹3,249</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title=Hopscotch Party Dresse &category=Clothing&price=1,139&oldPrice=1,499&image1=assets/Products/product-12-1.jpg&image2=assets/Products/product-12-2.jpg&description=Hopscotch Girls Knee Length Party Dresses"
+                  class="product__images">
+                  <img src="assets/Products/product-12-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-12-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Dress</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Clothing&price=275&oldPrice=2,999&image1=assets/Products/product-6-1.jpg&image2=assets/Products/product-6-2.jpg">
+                  <h3 class="product__title">Hopscotch Party Dresse</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹1,139</span>
+                  <span class="old__price">₹1,499</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title= Casual Polyester Dress &category=Clothing&price=1,020&oldPrice=1,569&image1=assets/Products/product-13-1.jpg&image2=assets/Products/product-13-2.jpg&description=Hopscotch Girl's Solid Knee-Length Casual Dress Polyester In White Color"
+                  class="product__images">
+                  <img src="assets/Products/product-13-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-13-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Dress</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Clothing&price=275&oldPrice=2,999&image1=assets/Products/product-6-1.jpg&image2=assets/Products/product-6-2.jpg">
+                  <h3 class="product__title">Casual Polyester Dress</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹1,020</span>
+                  <span class="old__price">₹1,569</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title= Wedge Heel &category=Clothing&price=1,618&oldPrice=2,490&image1=assets/Products/product-14-1.jpg&image2=assets/Products/product-14-2.jpg&description=Mochi Women Wedge Heel Fashion Sandal"
+                  class="product__images">
+                  <img src="assets/Products/product-14-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-14-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Sandal</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Arguments&price=1,618&oldPrice=2,490&image1=assets/Products/product-6-1.jpg&image2=assets/Products/product-6-2.jpg">
+                  <h3 class="product__title">Wedge Heel</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹1,618</span>
+                  <span class="old__price">₹2,490</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title=Ladies Lace Gloves&category=Clothing&price=369&oldPrice=999&image1=assets/Products/product-15-1.jpg&image2=assets/Products/product-15-2.jpg&description=Anzailala Ladies Lace Gloves Elegant Short Gloves Courtesy Summer Gloves for Wedding Dinner Parties"
+                  class="product__images">
+                  <img src="assets/Products/product-15-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-15-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Gloves</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Arguments&price=1,618&oldPrice=2,490&image1=assets/Products/product-6-1.jpg&image2=assets/Products/product-6-2.jpg">
+                  <h3 class="product__title">Ladies Lace Gloves</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹369</span>
+                  <span class="old__price">₹999</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title= Women Midi Dress&category=Clothing&price=437&oldPrice=1599&image1=assets/Products/product-16-1.jpg&image2=assets/Products/product-16-2.jpg&description=T2F Girls Casual Knee-Length Dress(Pack of 3)"
+                  class="product__images" class="product__images">
+                  <img src="assets/Products/product-16-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-16-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">Hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Clothing</span>
+                <a
+                  href="details.html?title=Girls Casual Knee-Length Dress&category=Clothing&price=569&oldPrice=1599.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg">
+                  <h3 class="product__title">Girls Casual Knee-Length Dress</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹569</span>
+                  <span class="old__price">₹1599</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+          </div>
+        </div>
+        <div class="tab__item" content id="new-added">
+          <div class="products__container grid">
+
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title=  Wrist Watch for Women &category=Clothing&price=437&oldPrice=1599&image1=assets/Products/product-17-1.jpg&image2=assets/Products/product-17-2.jpg&description=LOUIS DEVIN Rose Gold Plated Mesh Chain Analog Wrist Watch for Women (Black/Blue/Rose Gold Dial) | RG162"
+                  class="product__images" class="product__images">
+                  <img src="assets/Products/product-17-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-17-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">Cool</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Watch</span>
+                <a
+                  href="details.html?title= Wrist Watch for Women &category=Clothing&price=569&oldPrice=1599.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg">
+                  <h3 class="product__title"> Wrist Watch for Women </h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹349</span>
+                  <span class="old__price">₹2599</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+             <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+             <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title= Women Midi Dress&category=Clothing&price=437&oldPrice=1999&image1=assets/Products/product-2-1.jpg&image2=assets/Products/product-2-2.jpg&description=Leriya Fashion Women Midi Dress | One Piece Dress for Women | Dresses for Women | Trendi Dress for Women"
+                  class="product__images" class="product__images">
+                  <img src="assets/Products/product-2-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-2-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">Hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Clothing</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Clothing&price=238.85&oldPrice=245.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg">
+                  <h3 class="product__title">Women Midi Dress</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹437</span>
+                  <span class="old__price">₹1999</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title=  Tendencies Necklace &category =Clothing&price=2,975&oldPrice=3,500&image1=assets/Products/product-18-1.jpg&image2=assets/Products/product-18-2.jpg&description=Shaya by Caratlane Oxidised Owning My Perfectionist Tendencies Necklace for women"
+                  class="product__images" class="product__images">
+                  <img src="assets/Products/product-18-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-18-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">Cool</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Watch</span>
+                <a
+                  href="details.html?title= Wrist Watch for Women &category=Clothing&price=569&oldPrice=1599.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg">
+                  <h3 class="product__title">Tendencies Necklace </h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹2,975</span>
+                  <span class="old__price">₹3,500</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+             <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+             <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title=  Ethnicwear Dress&category=Arunaments&price=2,089&oldPrice=3,199&image1=assets/Products/product-8-1.jpg&image2=assets/Products/product-8-2.jpg&description=A.T.U.N. (ALL THINGS UBER NICE) Girls Long Ethnicwear Dress"
+                  class="product__images">
+                  <img src="assets/Products/product-8-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-8-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Dress</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Clothing&price=275&oldPrice=1,495&image1=assets/Products/product-6-1.jpg&image2=assets/Products/product-6-2.jpg">
+                  <h3 class="product__title">Ethnicwear Dress</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹2,089</span>
+                  <span class="old__price">₹3,199</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title=   Birthday Sash and Crown =Clothing&price=299&oldPrice=1,495&image1=assets/Products/product-19-1.jpg&image2=assets/Products/product-19-2.jpg&description=Shining Diva Fashion Latest Stylish Birthday Sash and Crown - Pack of 2 Pcs | Birthday Queen Crown | Birthday Gifts for Best Friend, Sister, Teenager | Birthday Decorations Items"
+                  class="product__images" class="product__images">
+                  <img src="assets/Products/product-19-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-19-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">Cool</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Sash and Crown</span>
+                <a
+                  href="details.html?title= Wrist Watch for Women &category=Clothing&price=569&oldPrice=1599.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg">
+                  <h3 class="product__title"> Birthday Sash and Crown </h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹299</span>
+                  <span class="old__price">₹1,495</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title= Wedge Heel &category=Clothing&price=1,618&oldPrice=2,490&image1=assets/Products/product-14-1.jpg&image2=assets/Products/product-14-2.jpg&description=Mochi Women Wedge Heel Fashion Sandal"
+                  class="product__images">
+                  <img src="assets/Products/product-14-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-14-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Sandal</span>
+                <a
+                  href="details.html?title=Colorful Pattern Shirts&category=Arguments&price=1,618&oldPrice=2,490&image1=assets/Products/product-6-1.jpg&image2=assets/Products/product-6-2.jpg">
+                  <h3 class="product__title">Wedge Heel</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹1,618</span>
+                  <span class="old__price">₹2,490</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title=  Aristocrat Polyester Dasher  &category=Clothing&price=2,980&oldPrice=4,500&image1=assets/Products/product-20-1.jpg&image2=assets/Products/product-20-2.jpg&description=Aristocrat Polyester Dasher 4W Str 68 Blue, Soft, Spinner, Trolley"
+                  class="product__images" class="product__images">
+                  <img src="assets/Products/product-20-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-20-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">Cool</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Trolley</span>
+                <a
+                  href="details.html?title= Wrist Watch for Women &category=Clothing&price=569&oldPrice=1599.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg">
+                  <h3 class="product__title">Aristocrat Polyester Dasher &category </h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹2,980</span>
+                  <span class="old__price">₹4,500</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+             <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+             <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html?title= Women Midi Dress&category=Clothing&price=437&oldPrice=1599&image1=assets/Products/product-16-1.jpg&image2=assets/Products/product-16-2.jpg&description=T2F Girls Casual Knee-Length Dress(Pack of 3)"
+                  class="product__images" class="product__images">
+                  <img src="assets/Products/product-16-1.jpg" alt="" class="product__img default" />
+                  <img src="assets/Products/product-16-2.jpg" alt="" class="product__img hover" />
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="fi fi-rs-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                    <i class="fi fi-rs-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="fi fi-rs-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product__badge light-pink">Hot</div>
+              </div>
+              <div class="product__content">
+                <span class="product__category">Clothing</span>
+                <a
+                  href="details.html?title=Girls Casual Knee-Length Dress&category=Clothing&price=569&oldPrice=1599.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg">
+                  <h3 class="product__title">Girls Casual Knee-Length Dress</h3>
+                </a>
+                <div class="product__rating">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+                <div class="product__price flex">
+                  <span class="new__price">₹569</span>
+                  <span class="old__price">₹1599</span>
+                </div>
+                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                </a>
+              </div>
+            </div>
+
+
+
+
+
+            <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== DEALS ===============-->
+    <section class="deals section">
+      <div class="deals__container container grid">
+        <div class="deals__item">
+          <div class="deals__group">
+            <h3 class="deals__brand">Deals of the Day</h3>
+            <span class="deals__category">Limited quantities</span>
+          </div>
+          <h4 class="deals__title">Summer Collection New Modern Design</h4>
+          <div class="deals__price flex">
+            <span class="new__price">₹139.00</span>
+            <span class="old__price">₹160.99</span>
+          </div>
+          <div class="deals__group">
+            <p class="deals__countdown-text">Hurry Up! Offer Ends In:</p>
+            <div class="countdown">
+              <div class="countdown__amount">
+                <p class="countdown__period days">00</p>
+                <span class="unit">Days</span>
+              </div>
+              <div class="countdown__amount">
+                <p class="countdown__period hours">00</p>
+                <span class="unit">Hours</span>
+              </div>
+              <div class="countdown__amount">
+                <p class="countdown__period minutes">00</p>
+                <span class="unit">Mins</span>
+              </div>
+              <div class="countdown__amount">
+                <p class="countdown__period seconds">00</p>
+                <span class="unit">Sec</span>
+              </div>
+            </div>
+            
+          </div>
+          <div class="deals__btn">
+            <a href="shop.html" class="btn btn--md">Shop Now</a>
+          </div>
+        </div>
+        <div class="deals__item">
+          <div class="deals__group">
+            <h3 class="deals__brand">Women Clothing</h3>
+            <span class="deals__category">Shirts & Bag</span>
+          </div>
+          <h4 class="deals__title">Try Something new on vacation</h4>
+          <div class="deals__price flex">
+            <span class="new__price">₹178.00</span>
+            <span class="old__price">₹256.99</span>
+          </div>
+          <div class="deals__group">
+            <p class="deals__countdown-text">Hurry Up! Offer Ends In:</p>
+            <div class="countdown">
+              <div class="countdown__amount">
+                <p class="countdown__period days">00</p>
+                <span class="unit">Days</span>
+              </div>
+              <div class="countdown__amount">
+                <p class="countdown__period hours">00</p>
+                <span class="unit">Hours</span>
+              </div>
+              <div class="countdown__amount">
+                <p class="countdown__period minutes">00</p>
+                <span class="unit">Mins</span>
+              </div>
+              <div class="countdown__amount">
+                <p class="countdown__period seconds">00</p>
+                <span class="unit">Sec</span>
+              </div>
+            </div>
+          </div>
+          <div class="deals__btn">
+            <a href="shop.html" class="btn btn--md">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== NEW ARRIVALS ===============-->
+    <section class="new__arrivals container section">
+      <h3 class="section__title"><span>New</span> Arrivals</h3>
+      <div class="products__container grid">
+
+
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?title=  Wrist Watch for Women &category=Clothing&price=437&oldPrice=1599&image1=assets/Products/product-17-1.jpg&image2=assets/Products/product-17-2.jpg&description=LOUIS DEVIN Rose Gold Plated Mesh Chain Analog Wrist Watch for Women (Black/Blue/Rose Gold Dial) | RG162"
+              class="product__images" class="product__images">
+              <img src="assets/Products/product-17-1.jpg" alt="" class="product__img default" />
+              <img src="assets/Products/product-17-2.jpg" alt="" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View">
+                <i class="fi fi-rs-eye"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="Compare">
+                <i class="fi fi-rs-shuffle"></i>
+              </a>
+            </div>
+            <div class="product__badge light-pink">Cool</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Watch</span>
+            <a
+              href="details.html?title= Wrist Watch for Women &category=Clothing&price=569&oldPrice=1599.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg">
+              <h3 class="product__title"> Wrist Watch for Women </h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₹349</span>
+              <span class="old__price">₹2599</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
+      
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?title=  Tendencies Necklace &category =Clothing&price=2,975&oldPrice=3,500&image1=assets/Products/product-18-1.jpg&image2=assets/Products/product-18-2.jpg&description=Shaya by Caratlane Oxidised Owning My Perfectionist Tendencies Necklace for women"
+              class="product__images" class="product__images">
+              <img src="assets/Products/product-18-1.jpg" alt="" class="product__img default" />
+              <img src="assets/Products/product-18-2.jpg" alt="" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View">
+                <i class="fi fi-rs-eye"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="Compare">
+                <i class="fi fi-rs-shuffle"></i>
+              </a>
+            </div>
+            <div class="product__badge light-pink">Cool</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Watch</span>
+            <a
+              href="details.html?title= Wrist Watch for Women &category=Clothing&price=569&oldPrice=1599.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg">
+              <h3 class="product__title">Tendencies Necklace </h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₹2,975</span>
+              <span class="old__price">₹3,500</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?title=   Birthday Sash and Crown =Clothing&price=299&oldPrice=1,495&image1=assets/Products/product-19-1.jpg&image2=assets/Products/product-19-2.jpg&description=Shining Diva Fashion Latest Stylish Birthday Sash and Crown - Pack of 2 Pcs | Birthday Queen Crown | Birthday Gifts for Best Friend, Sister, Teenager | Birthday Decorations Items"
+              class="product__images" class="product__images">
+              <img src="assets/Products/product-19-1.jpg" alt="" class="product__img default" />
+              <img src="assets/Products/product-19-2.jpg" alt="" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View">
+                <i class="fi fi-rs-eye"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="Compare">
+                <i class="fi fi-rs-shuffle"></i>
+              </a>
+            </div>
+            <div class="product__badge light-pink">Cool</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Sash and Crown</span>
+            <a
+              href="details.html?title= Wrist Watch for Women &category=Clothing&price=569&oldPrice=1599.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg">
+              <h3 class="product__title"> Birthday Sash and Crown </h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₹299</span>
+              <span class="old__price">₹1,495</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
+      
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?title=  Aristocrat Polyester Dasher  &category=Clothing&price=2,980&oldPrice=4,500&image1=assets/Products/product-20-1.jpg&image2=assets/Products/product-20-2.jpg&description=Aristocrat Polyester Dasher 4W Str 68 Blue, Soft, Spinner, Trolley"
+              class="product__images" class="product__images">
+              <img src="assets/Products/product-20-1.jpg" alt="" class="product__img default" />
+              <img src="assets/Products/product-20-2.jpg" alt="" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View">
+                <i class="fi fi-rs-eye"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="Compare">
+                <i class="fi fi-rs-shuffle"></i>
+              </a>
+            </div>
+            <div class="product__badge light-pink">Cool</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Trolley</span>
+            <a
+              href="details.html?title= Wrist Watch for Women &category=Clothing&price=569&oldPrice=1599.8&image1=assets/Products/product-1-1.jpg&image2=assets/Products/product-1-2.jpg">
+              <h3 class="product__title">Aristocrat Polyester Dasher &category </h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+              <i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₹2,980</span>
+              <span class="old__price">₹4,500</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
+      
+      
+      
+      
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+      </div>
+    </section>
+
+    <!--=============== SHOWCASE ===============-->
+   
+    <!--=============== NEWSLETTER ===============-->
+    <section class="newsletter section home__newsletter">
+      <div class="newsletter__container container grid">
+        <h3 class="newsletter__title flex">
+          <img src="./assets/img/icon-email.svg" alt="" class="newsletter__icon" />
+          Sign in to Newsletter
+        </h3>
+        <p class="newsletter__description">
+          ...and receive $25 coupon for first shopping.
+        </p>
+        <form action="" class="newsletter__form">
+          <input type="text" placeholder="Enter Your Email" class="newsletter__input" />
+          <button type="submit" class="newsletter__btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <div class="footer__container grid">
+      <div class="footer__content">
+        <a href="index.html" class="footer__logo">
+          <img src="./assets/img/Logo.png" alt="" class="footer__logo-img" />
+        </a>
+        <h4 class="footer__subtitle">Contact</h4>
+        <p class="footer__description">
+          <span>Address:</span> 6/32, 12th street,Padi
+        </p>
+        <p class="footer__description">
+          <span>Phone:</span> +916383600352
+        </p>
+        <p class="footer__description">
+          <span>Hours:</span> 10:00 - 18:00, Mon - Sat
+        </p>
+        <div class="footer__social">
+          <h4 class="footer__subtitle">Follow Me</h4>
+          <div class="footer__links flex">
+            <a href="#">
+              <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-twitter.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-pinterest.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Address</h3>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">About Us</a></li>
+          <li><a href="#" class="footer__link">Delivery Information</a></li>
+          <li><a href="#" class="footer__link">Privacy Policy</a></li>
+          <li><a href="#" class="footer__link">Terms & Conditions</a></li>
+          <li><a href="#" class="footer__link">Contact Us</a></li>
+          <li><a href="#" class="footer__link">Support Center</a></li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">My Account</h3>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">Sign In</a></li>
+          <li><a href="#" class="footer__link">View Cart</a></li>
+          <li><a href="#" class="footer__link">My Wishlist</a></li>
+          <li><a href="#" class="footer__link">Track My Order</a></li>
+          <li><a href="#" class="footer__link">Help</a></li>
+          <li><a href="#" class="footer__link">Order</a></li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Secured Payed Gateways</h3>
+        <img src="./assets/img/payment-method.png" alt="" class="payment__img" />
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="copyright">&copy; 2024 GoShop. All right reserved</p>
+      <span class="designer">Designer by YUVA</span>
+    </div>
+  </footer>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+  <script>
+    
+  function startCountdown(durationInSeconds, element) {
+    let countdown = durationInSeconds;
+
+    function updateCountdown() {
+      const days = Math.floor(countdown / (24 * 60 * 60));
+      const hours = Math.floor((countdown % (24 * 60 * 60)) / (60 * 60));
+      const minutes = Math.floor((countdown % (60 * 60)) / 60);
+      const seconds = countdown % 60;
+
+      element.querySelector('.days').textContent = days.toString().padStart(2, '0');
+      element.querySelector('.hours').textContent = hours.toString().padStart(2, '0');
+      element.querySelector('.minutes').textContent = minutes.toString().padStart(2, '0');
+      element.querySelector('.seconds').textContent = seconds.toString().padStart(2, '0');
+
+      if (countdown > 0) {
+        countdown--;
+      } else {
+        clearInterval(interval);
+      }
+    }
+
+    updateCountdown(); // Initial call to set values immediately
+    const interval = setInterval(updateCountdown, 1000);
+  }
+
+  // Start countdown for both timers
+  document.addEventListener('DOMContentLoaded', () => {
+    startCountdown(200000, document.querySelector('.deals__item:first-child .countdown'));
+    startCountdown(150000, document.querySelector('.deals__item:last-child .countdown'));
+  });
+
+
+  </script>
+</body>
+
+</html>

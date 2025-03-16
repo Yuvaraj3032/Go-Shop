@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <title>My Orders</title>
+  <style>
+     .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #f4f4f4;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .social-icons a:hover {
+      background-color: #007bff;
+      color: #fff;
+      transform: scale(1.1);
+    }
+    .info-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    
+
+   
+}
+
+.info-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    color:blue;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.info-link i {
+    font-size: 20px;
+}
+
+.info-link:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="info-links">
+          <a href="tel: +91 6383600352" class="info-link phone">
+            <i class="fas fa-phone icon"></i> +91 6383600352
+          </a>
+          <a href="mailto:yuvarajj3031@gmail.com" class="info-link email">
+            <i class="fas fa-envelope icon"></i>yuvarajj3031@gmail.com
+          </a>
+        </div>
+
+
+        <p class="header__alert-news">
+          Super Values Deals - Save more coupons
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img class="nav__logo-img" src="assets/img/logo.png" alt="website logo" />
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="shop.html" class="nav__link">Shop</a></li>
+          <li class="nav__item"><a href="orders.html" class="nav__link active-link">My Orders</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Orders Section -->
+  <main class="main">
+    <section class="orders section">
+      <div class="container">
+        <h2 class="section__title">My Orders</h2>
+        <table class="order__table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Order Date</th>
+              <th>Delivery Date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="orders-table-body">
+            <!-- Orders will be populated here using JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- JS to load orders -->
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const ordersTableBody = document.getElementById("orders-table-body");
+  let orders = JSON.parse(localStorage.getItem("orders")) || [];
+
+  if (orders.length === 0) {
+    ordersTableBody.innerHTML = "<tr><td colspan='7'>No orders found</td></tr>";
+    return;
+  }
+
+  orders.forEach((order, index) => {
+    // Calculate delivery date (10 days after the order date)
+    const orderDate = new Date(order.date);
+    const deliveryDate = new Date(orderDate);
+    deliveryDate.setDate(orderDate.getDate() + 10);
+
+    const row = `
+      <tr>
+        <td><img src="${order.image}" width="50"></td>
+        <td>${order.title}</td>
+        <td>${order.quantity}</td>
+        <td>₹${order.total.toFixed(2)}</td>
+        <td>${order.date}</td>
+        <td>${deliveryDate.toLocaleDateString()}</td>
+        <td><button class="cancel-order-btn" data-index="${index}">Cancel Order</button></td>
+      </tr>
+    `;
+    ordersTableBody.insertAdjacentHTML('beforeend', row);
+  });
+
+  // Add event listeners for cancel order buttons
+  const cancelButtons = document.querySelectorAll(".cancel-order-btn");
+  cancelButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const index = button.getAttribute("data-index");
+      cancelOrder(index);
+    });
+  });
+});
+
+function cancelOrder(index) {
+  let orders = JSON.parse(localStorage.getItem("orders")) || [];
+  if (index >= 0 && index < orders.length) {
+    orders.splice(index, 1); // Remove the order at the specified index
+    localStorage.setItem("orders", JSON.stringify(orders)); // Update localStorage
+    alert("Order canceled successfully.");
+    window.location.reload(); // Refresh the page to reflect changes
+  }
+}
+  </script>
+
+</body>
+</html>

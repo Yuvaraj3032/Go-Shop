@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #f4f4f4;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .social-icons a:hover {
+      background-color: #007bff;
+      color: #fff;
+      transform: scale(1.1);
+    }
+    .info-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    
+
+   
+}
+
+.info-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    color:blue;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.info-link i {
+    font-size: 20px;
+}
+
+.info-link:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+  </style>
+
+
+
+  <title>Ecommerce Website</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="info-links">
+          <a href="tel: +916383600352" class="info-link phone">
+            <i class="fas fa-phone icon"></i> +916383600352
+          </a>
+          <a href="mailto:yuvarajj3031@gmail.com" class="info-link email">
+            <i class="fas fa-envelope icon"></i>yuvarajj3031@gmail.com
+          </a>
+        </div>
+
+
+        <p class="header__alert-news">
+          Super Values Deals - Save more coupons
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img class="nav__logo-img" src="assets/img/logo.png" alt="website logo" />
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__menu-top">
+          <a href="index.html" class="nav__menu-logo">
+            <img src="./assets/img/logo.png" alt="">
+          </a>
+          <div class="nav__close" id="nav-close">
+            <i class="fi fi-rs-cross-small"></i>
+          </div>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link active-link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="shop.html" class="nav__link">Shop</a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">About Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">Contact Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="faq.html" class="nav__link">FAQ</a>
+          </li>
+
+
+        </ul>
+        <div class="header__search">
+          <input type="text" placeholder="Search For Items..." class="form__input" />
+          <button class="search__btn">
+            <img src="assets/img/search.png" alt="search icon" />
+          </button>
+        </div>
+      </div>
+      <div class="header__user-actions">
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/icon-heart.svg" alt="" />
+    
+        </a>
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/icon-cart.svg" alt="" />
+          
+        </a>
+        <div class="header__action-btn nav__toggle" id="nav-toggle">
+          <img src="./assets//img/menu-burger.svg" alt="">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb__list flex container">
+          <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+          <li><span class="breadcrumb__link"></span>></li>
+          <li><span class="breadcrumb__link">Shop</span></li>
+          <li><span class="breadcrumb__link"></span>></li>
+          <li><span class="breadcrumb__link">Wishlist</span></li>
+        </ul>
+      </section>
+
+      <!--=============== WISHLIST ===============-->
+      <section class="wishlist section--lg container">
+        <div class="table__container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock Status</th>
+                <th>Action</th>
+                <th>Rename</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="./assets//img/product-1-2.jpg"
+                    alt=""
+                    class="table__img"
+                  />
+                </td>
+                <td>
+                  <h3 class="table__title">
+                    J.Crew Mercantile Women's Short-Sleeve
+                  </h3>
+                  <p class="table__description">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                </td>
+                <td>
+                  <span class="table__price">$110</span>
+                </td>
+                <td><span class="table__stock">In Stock</span></td>
+                <td><a href="#" class="btn btn--sm">Add to Cart</a></td>
+                <td><i class="fi fi-rs-trash table__trash"></i></td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="./assets//img/product-7-1.jpg"
+                    alt=""
+                    class="table__img"
+                  />
+                </td>
+                <td>
+                  <h3 class="table__title">Amazon Essentials Women's Tank</h3>
+                  <p class="table__description">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                </td>
+                <td>
+                  <span class="table__price">$110</span>
+                </td>
+                <td><span class="table__stock">In Stock</span></td>
+                <td><a href="#" class="btn btn--sm">Add to Cart</a></td>
+                <td><i class="fi fi-rs-trash table__trash"></i></td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="./assets//img/product-2-1.jpg"
+                    alt=""
+                    class="table__img"
+                  />
+                </td>
+                <td>
+                  <h3 class="table__title">
+                    Amazon Brand - Daily Ritual Women's Jersey
+                  </h3>
+                  <p class="table__description">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                </td>
+                <td>
+                  <span class="table__price">$110</span>
+                </td>
+                <td><span class="table__stock">In Stock</span></td>
+                <td><a href="#" class="btn btn--sm">Add to Cart</a></td>
+                <td><i class="fi fi-rs-trash table__trash"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section">
+        <div class="newsletter__container container grid">
+          <h3 class="newsletter__title flex">
+            <img
+              src="./assets/img/icon-email.svg"
+              alt=""
+              class="newsletter__icon"
+            />
+            Sign in to Newsletter
+          </h3>
+          <p class="newsletter__description">
+            ...and receive $25 coupon for first shopping.
+          </p>
+          <form action="" class="newsletter__form">
+            <input
+              type="text"
+              placeholder="Enter Your Email"
+              class="newsletter__input"
+            />
+            <button type="submit" class="newsletter__btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const wishlistTable = document.querySelector(".wishlist tbody");
+        let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+    
+        wishlistTable.innerHTML = wishlist.length > 0 ? "" : "<tr><td colspan='6'>No items in wishlist</td></tr>";
+    
+        wishlist.forEach((item, index) => {
+          const row = `
+            <tr>
+              <td><img src="${item.image}" class="table__img" /></td>
+              <td><h3 class="table__title">${item.title}</h3></td>
+              <td><span class="table__price">${item.price}</span></td>
+              <td><span class="table__stock">In Stock</span></td>
+              <td><button class="btn btn--sm add-to-cart" data-index="${index}">Add to Cart</button></td>
+              <td><i class="fi fi-rs-trash table__trash remove-wishlist" data-index="${index}"></i></td>
+            </tr>
+          `;
+          wishlistTable.insertAdjacentHTML("beforeend", row);
+        });
+    
+        document.querySelectorAll(".remove-wishlist").forEach(button => {
+          button.addEventListener("click", (event) => {
+            const index = event.target.dataset.index;
+            wishlist.splice(index, 1);
+            localStorage.setItem("wishlist", JSON.stringify(wishlist));
+            location.reload();
+          });
+        });
+    
+        document.querySelectorAll(".add-to-cart").forEach(button => {
+          button.addEventListener("click", (event) => {
+            const index = event.target.dataset.index;
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.push(wishlist[index]);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            alert("Added to Cart!");
+          });
+        });
+      });
+    </script>
+    
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer__container grid">
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img src="./assets/img/logo.png" alt="" class="footer__logo-img" />
+          </a>
+          <h4 class="footer__subtitle">Contact</h4>
+          <p class="footer__description">
+            <span>Address:</span>6/32, 12 th street,Padi
+          </p>
+          <p class="footer__description">
+            <span>Phone:</span>+916383600352
+          </p>
+          <p class="footer__description">
+            <span>Hours:</span> 10:00 - 18:00, Mon - Sat
+          </p>
+          <div class="footer__social">
+            <h4 class="footer__subtitle">Follow Me</h4>
+            <div class="footer__links flex">
+              <a href="#">
+                <img
+                  src="./assets/img/icon-facebook.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-twitter.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-instagram.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-pinterest.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-youtube.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Address</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Delivery Information</a></li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Terms & Conditions</a></li>
+            <li><a href="#" class="footer__link">Contact Us</a></li>
+            <li><a href="#" class="footer__link">Support Center</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">My Account</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Sign In</a></li>
+            <li><a href="#" class="footer__link">View Cart</a></li>
+            <li><a href="#" class="footer__link">My Wishlist</a></li>
+            <li><a href="#" class="footer__link">Track My Order</a></li>
+            <li><a href="#" class="footer__link">Help</a></li>
+            <li><a href="#" class="footer__link">Order</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Secured Payed Gateways</h3>
+          <img
+            src="./assets/img/payment-method.png"
+            alt=""
+            class="payment__img"
+          />
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="copyright">&copy; 2024 GoShop. All right reserved</p>
+        <span class="designer">Designer by YUVA</span>
+      </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
